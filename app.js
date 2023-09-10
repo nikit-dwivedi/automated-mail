@@ -15,7 +15,7 @@ app.use(morgan('dev'));
 // use cors
 app.use(cors());
 //image path
-app.use('/static', express.static('static'))
+app.use('/static', express.static('template'))
 //body parsing
 app.use(express.urlencoded({ extended: false }));
 app.use(express.json());
