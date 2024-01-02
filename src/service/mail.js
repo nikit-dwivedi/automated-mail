@@ -6,8 +6,8 @@ const transporter = nodemailer.createTransport({
     host: 'smtp.gmail.com',
     port: 587,
     auth: {
-        user: 'nikitdwivedi@fabloplatforms.com', // Your email address
-        pass: 'wrovjfcqsrskxjhj', // Your email password or an app-specific password
+        user: '', // Your email address
+        pass: '', // Your email password or an app-specific password
     },
 });
 
@@ -15,7 +15,7 @@ const transporter = nodemailer.createTransport({
 // Function to send an email
 exports.sendEmail = (recipient, subject, ccList, text) => {
     const mailOptions = {
-        from: 'nikitdwivedi@fabloplatforms.com', // Sender's email address
+        from: '', // Sender's email address
         to: recipient.email,
         cc: ccList,
         subject: subject,
